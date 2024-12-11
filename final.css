@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, purple, pink);
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #3c40c6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Post Form */
+#post-form {
+    margin-bottom: 30px;
+    background: #f4f4f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#post-form input, #post-form textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#post-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#post-form button {
+    background-color: #3c40c6;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#post-form button:hover {
+    background-color: #2c2fa8;
+}
+
+/* Posts Container */
+#posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+    color: #3c40c6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 5px 0 0;
+    border-radius: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.edit {
+    background-color: lightgrey;
+    color: #333;
+}
+
+button.edit:hover {
+    background-color: #ffbf00;
+}
+
+button.delete {
+    background-color: lightgrey;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: lightgrey;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #post-form input, #post-form textarea {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 0.85em;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+}
